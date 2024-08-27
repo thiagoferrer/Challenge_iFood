@@ -597,11 +597,30 @@ body{
     text-align: center;
 }
 
-.metas-container canvas {
-    width: 100% !important;
-    height: auto !important;
+/* Estilo do gráfico de meia pizza */
+.half-pie {
+    width: 100px;
+    height: 50px;
+    background: conic-gradient(#4CAF50 0% 50%, #FF5722 50% 100%);
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.half-pie::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: #f4f4f4;
+    border-radius: 40px 40px 0 0;
+    top: 10px;
+    left: 10px;
 }
 
 .description {
-    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
 }
