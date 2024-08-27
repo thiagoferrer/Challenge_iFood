@@ -440,6 +440,25 @@ body{
 }
 
 /* Grafico */
+.details-chart{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1);
+}
+
+.chart-order{
+    background: #f7f7f7;
+    position: relative;
+    display: grid;
+    min-height: 250px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px #999;
+}
+
 .chart-container {
     width: 100%;
     padding: 20px;
