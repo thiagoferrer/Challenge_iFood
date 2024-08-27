@@ -204,7 +204,7 @@ body{
 }
 
 .despesas{
-    background: #fe6347;
+    background: #ea1d2c;
 }
 
 .saldo {
@@ -212,7 +212,7 @@ body{
 }
 
 .cliente {
-    background: #FFD966;
+    background: #ffff00;
 }
 
 .cardBox .card .numbers {
@@ -265,8 +265,8 @@ body{
 .btn {
     position: relative;
     padding: 5px 10px;
-    background: #A6A29F;
-    color: #000;
+    background: #ea1d2c;
+    color: #fff;
     text-decoration: none;
     border-radius: 6px;
 }
@@ -304,7 +304,7 @@ body{
 .Status {
     position: relative;
     padding: 2px 4px;
-    background: #f00;
+    background: #ea1d2c;
     color: #000;
     border-radius: 4px;
     font-size: 14px;
@@ -313,15 +313,16 @@ body{
 }
 
 .cancelado{
-    background: #f00;
+    background: #ea1d2c;
 }
 
 .novo{
-    background: #1795ce;
+    background: #1e90ff;
 }
 
 .processo{
-    background: #f9ca3f;
+    background: #ffff00;
+
 }
 
 .caminho {
@@ -329,7 +330,7 @@ body{
 }
 
 .entregue {
-    background: #8dde02;
+    background: #32cd33;
 }
 
 .details .recentCustomers {
