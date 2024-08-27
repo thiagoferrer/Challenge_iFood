@@ -1,3 +1,4 @@
+// index.HTML
 function toggleMenu(){
     let toggle = document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation');

@@ -467,7 +467,6 @@ body{
 .financeiro_table tr:hover{
     background: #F7ACB7;
     color: #000;
-    font-weight: 500;
 }
 
 .financeiro_table tbody tr:last-child{
