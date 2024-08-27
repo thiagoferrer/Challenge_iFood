@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* MENU LATERAL */
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #F5E9DA;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active{
+    width: 60px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover  {
+    background: #DA5D69;
+    transition: 0.5s;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .bi{
+    font-size: 24px;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main{
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.main .topbar {
+    width: 100%;
+    background: #f7f7f7;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: '☰';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+
+.search {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.search label {
+    position: relative;
+    width: 350px; 
+}
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search label .bi {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    position: absolute; 
+    right: 20px; 
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTEÚDO PRINCIPAL - CARDS */
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px 20px; /*Deslocamento interno ajustar*/
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #999;
+}
+
+.receitas{
+    background: #32cd33;
+}
+
+.despesas{
+    background: #fe6347;
+}
+
+.saldo {
+    background: #1e90ff;
+}
+
+.cliente {
+    background: #FFD966;
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName {
+    color: #000;
+
+}
+
+.cardBox .card .iconBox {
+    font-size: 2.5em;
+    color: #000;
+
+}
+
+/* CONTEÚDO PRINCIPAL - STATUS ORDERS */
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1);
+}
+
+.details .recentOrders {
+    position: relative;
+    display: grid;
+    min-height: 250px;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+.cardheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardheader h2 {
+    font-weight: 600;
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: #A6A29F;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recentOrders table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOrders table tr:hover{
+    background: #F7ACB7;
+    color: #000;
+    transform: scale(1.0);
+    font-weight: bold;
+}
+
+.details .recentOrders table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.details .recentOrders table tr td {
+    padding: 9px 5px;
+    text-align: center;
+}
+
+.Status {
+    position: relative;
+    padding: 2px 4px;
+    background: #f00;
+    color: #000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.cancelado{
+    background: #f00;
+}
+
+.novo{
+    background: #1795ce;
+}
+
+.processo{
+    background: #f9ca3f;
+}
+
+.caminho {
+    background: #fc821e;
+}
+
+.entregue {
+    background: #8dde02;
+}
+
+.details .recentCustomers {
+    background: #f7f7f7;
+    position: relative;
+    display: grid;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.details .recentCustomers .imgBx {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details .recentCustomers .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details .recentCustomers table tr td h4 span {
+    font-size: 14px;
+    color: #999;
+}
+
+.details .recentCustomers table tr:hover,
+.details .recentCustomers table tr:hover td h4 span {
+    background: #F7ACB7;
+    color: #000;
+    transform: scale(1);
+    font-weight: bold;
+}
+
+.details .recentCustomers table tr td {
+    padding: 7px 10px;
+}
+
+.details .recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+/* Financeiro.HTML */
+/* Tabela */
+
+.detailsfinanceiro{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.financeiro{
+    background: #f7f7f7;
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+    min-height: 250px;
+    padding: 20px;
+    display: grid;
+    grid-gap:20px;
+}
+
+.financeiroheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.financeiroheader h2{
+    font-weight: 600;
+}
+
+.financeiro_table{
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.financeiro_table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1px;
+}
+
+.financeiro_table tr:hover{
+    background: #F7ACB7;
+    color: #000;
+    font-weight: 600;
+}
+
+.financeiro_table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.financeiro_table tr td {
+    padding: 4px 4.5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Grafico */
+.chart-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.chart {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.bar {
+    width: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to top, #e0e0e0 50%, #3498db);
+}
+
+.bar::before {
+    content: attr(data-month);
+    position: absolute;
+    top: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.bar::after {
+    content: "R$ " attr(data-value);
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bar:hover {
+    transform: scale(1.1);
+}
+
+.bar[data-month="Jan"] { background: linear-gradient(to top, #FF5733, #FFBD33); }
+.bar[data-month="Feb"] { background: linear-gradient(to top, #FFBD33, #75FF33); }
+.bar[data-month="Mar"] { background: linear-gradient(to top, #75FF33, #33FF57); }
+.bar[data-month="Apr"] { background: linear-gradient(to top, #33FF57, #33FFBD); }
+.bar[data-month="May"] { background: linear-gradient(to top, #33FFBD, #33A2FF); }
+.bar[data-month="Jun"] { background: linear-gradient(to top, #33A2FF, #3358FF); }
+.bar[data-month="Jul"] { background: linear-gradient(to top, #3358FF, #7533FF); }
+.bar[data-month="Aug"] { background: linear-gradient(to top, #7533FF, #BD33FF); }
+.bar[data-month="Sep"] { background: linear-gradient(to top, #BD33FF, #FF33A2); }
+.bar[data-month="Oct"] { background: linear-gradient(to top, #FF33A2, #FF338F); }
+.bar[data-month="Nov"] { background: linear-gradient(to top, #FF338F, #FF3366); }
+.bar[data-month="Dec"] { background: linear-gradient(to top, #FF3366, #FF5733); }

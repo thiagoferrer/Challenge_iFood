@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge iFood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-basket"></i></span>
+                        <span class="title"><h2>iFood</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="financeiro.html">
+                        <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                        <span class="title">Financeiro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="metas.html">
+                        <span class="icon"><i class="bi bi-bullseye"></i></span>
+                        <span class="title">Metas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-bag"></i></span>
+                        <span class="title">Delivery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                        <span class="title">Avaliações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-add"></i></span>
+                        <span class="title">Criar Conta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="search here">
+                    <i class="bi bi-search"></i>
+                </label>
+            </div>
+            <div class="logo">
+                <img src="ifood logo vermelho.jpg">
+            </div>
+        </div>
+
+    <!-- Tabela -->
+    <div class="detailsfinanceiro">
+        <div class="financeiro">
+            <div class="financeiroheader">
+                <h2>Relatório</h2>
+                <a href="#" class="btn">View All</a>
+            </div>
+            <table class="financeiro_table">
+                <thead>
+                    <tr>
+                        <td>Caixa</td>
+                        <td>Janeiro</td>
+                        <td>Fevereiro</td>
+                        <td>Março</td>
+                        <td>Abril</td>
+                        <td>Maio</td>
+                        <td>Junho</td>
+                        <td>Julho</td>
+                        <td>Agosto</td>
+                        <td>Setembro</td>
+                        <td>Outurbo</td>
+                        <td>Novembro</td>
+                        <td>Dezembro</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Saldo In.</td>
+                        <td>R$3.000,00</td>
+                        <td>R$1.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                        <td>R$2.000,00</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Receitas</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Custos</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Imposto</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Despesas</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Resultado</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Acumulado</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Grafico -->
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar" data-value="3000" data-month="Jan"></div>
+                    <div class="bar" data-value="4500" data-month="Feb"></div>
+                    <div class="bar" data-value="3500" data-month="Mar"></div>
+                    <div class="bar" data-value="5000" data-month="Apr"></div>
+                    <div class="bar" data-value="2000" data-month="May"></div>
+                    <div class="bar" data-value="4000" data-month="Jun"></div>
+                    <div class="bar" data-value="3700" data-month="Jul"></div>
+                    <div class="bar" data-value="4800" data-month="Aug"></div>
+                    <div class="bar" data-value="2500" data-month="Sep"></div>
+                    <div class="bar" data-value="5300" data-month="Oct"></div>
+                    <div class="bar" data-value="4200" data-month="Nov"></div>
+                    <div class="bar" data-value="6000" data-month="Dec"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
