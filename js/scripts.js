@@ -24,7 +24,7 @@ function createHalfDoughnutChart(ctx, planejado, realizado) {
         data: {
             datasets: [{
                 data: [realizado, planejado - realizado],
-                backgroundColor: ['#ea1d2c', '#CCCCCC'],
+                backgroundColor: ['#FF3366', '#CCCCCC'],
                 hoverBackgroundColor: ['#FF6384', '#EEEEEE'],
                 borderWidth: 0
             }],

@@ -68,207 +68,207 @@
 
     <!-- Conteúdo principal -->
     <div class="main">
-        <div class="topbar">
-            <div class="toggle" onclick="toggleMenu();"></div>
-            <div class="search">
-                <label>
-                    <input type="text" placeholder="search here">
-                    <i class="bi bi-search"></i>
-                </label>
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="bi bi-search"></i>
+                    </label>
+                </div>
+                <div class="logo">
+                    <img src="./image/ifood logo vermelho.jpg">
+                </div>
             </div>
-            <div class="logo">
-                <img src="./image/ifood logo vermelho.jpg">
+
+        <!-- Tabela -->
+        <div class="detailsfinanceiro">
+            <div class="financeiro">
+                <div class="financeiroheader">
+                    <h2>Relatório</h2>
+                    <div class="search-bar">
+                        <form>
+                            <label for="month">Mês:</label>
+                            <select id="month" name="month">
+                                <option value="01">Janeiro</option>
+                                <option value="02">Fevereiro</option>
+                                <option value="03">Março</option>
+                                <option value="04">Abril</option>
+                                <option value="05">Maio</option>
+                                <option value="06">Junho</option>
+                                <option value="07">Julho</option>
+                                <option value="08">Agosto</option>
+                                <option value="09">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                    
+                            <label for="year">Ano:</label>
+                            <select id="year" name="year">
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <!-- Adicione mais anos conforme necessário -->
+                            </select>
+                    
+                            <button type="submit">Buscar</button>
+                        </form>
+                    </div>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table class="financeiro_table">
+                    <thead>
+                        <tr>
+                            <td>Fluxo de Caixa</td>
+                            <td>Janeiro</td>
+                            <td>Fevereiro</td>
+                            <td>Março</td>
+                            <td>Abril</td>
+                            <td>Maio</td>
+                            <td>Junho</td>
+                            <td>Julho</td>
+                            <td>Agosto</td>
+                            <td>Setembro</td>
+                            <td>Outurbo</td>
+                            <td>Novembro</td>
+                            <td>Dezembro</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saldo Inicial</td>
+                            <td>R$3.000,00</td>
+                            <td>R$1.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                            <td>R$2.000,00</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>Receitas</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Custos</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Imposto</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Despesas</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Resultado</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Acumulado</td>
+                                <td>R$3.000,00</td>
+                                <td>R$1.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                                <td>R$2.000,00</td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-    <!-- Tabela -->
-    <div class="detailsfinanceiro">
-        <div class="financeiro">
-            <div class="financeiroheader">
-                <h2>Relatório</h2>
-                <div class="search-bar">
-                    <form>
-                        <label for="month">Mês:</label>
-                        <select id="month" name="month">
-                            <option value="01">Janeiro</option>
-                            <option value="02">Fevereiro</option>
-                            <option value="03">Março</option>
-                            <option value="04">Abril</option>
-                            <option value="05">Maio</option>
-                            <option value="06">Junho</option>
-                            <option value="07">Julho</option>
-                            <option value="08">Agosto</option>
-                            <option value="09">Setembro</option>
-                            <option value="10">Outubro</option>
-                            <option value="11">Novembro</option>
-                            <option value="12">Dezembro</option>
-                        </select>
-                
-                        <label for="year">Ano:</label>
-                        <select id="year" name="year">
-                            <option value="2024">2024</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <!-- Adicione mais anos conforme necessário -->
-                        </select>
-                
-                        <button type="submit">Buscar</button>
-                    </form>
-                </div>
-                <a href="#" class="btn">View All</a>
-            </div>
-            <table class="financeiro_table">
-                <thead>
-                    <tr>
-                        <td>Fluxo de Caixa</td>
-                        <td>Janeiro</td>
-                        <td>Fevereiro</td>
-                        <td>Março</td>
-                        <td>Abril</td>
-                        <td>Maio</td>
-                        <td>Junho</td>
-                        <td>Julho</td>
-                        <td>Agosto</td>
-                        <td>Setembro</td>
-                        <td>Outurbo</td>
-                        <td>Novembro</td>
-                        <td>Dezembro</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Saldo Inicial</td>
-                        <td>R$3.000,00</td>
-                        <td>R$1.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                        <td>R$2.000,00</td>
-                    </tr>
-                    <tr>
-                        <tr>
-                            <td>Receitas</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Custos</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Despesas</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Resultado</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Acumulado</td>
-                            <td>R$3.000,00</td>
-                            <td>R$1.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                            <td>R$2.000,00</td>
-                        </tr>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- Grafico -->
-    <div class="details-chart">
-        <div class="chart-order">
-            <div class="chart-container">
-                <div class="chart">
-                    <div class="bar" data-value="3000" data-month="Jan"></div>
-                    <div class="bar" data-value="4500" data-month="Feb"></div>
-                    <div class="bar" data-value="3500" data-month="Mar"></div>
-                    <div class="bar" data-value="5000" data-month="Apr"></div>
-                    <div class="bar" data-value="2000" data-month="May"></div>
-                    <div class="bar" data-value="4000" data-month="Jun"></div>
-                    <div class="bar" data-value="3700" data-month="Jul"></div>
-                    <div class="bar" data-value="4800" data-month="Aug"></div>
-                    <div class="bar" data-value="2500" data-month="Sep"></div>
-                    <div class="bar" data-value="5300" data-month="Oct"></div>
-                    <div class="bar" data-value="4200" data-month="Nov"></div>
-                    <div class="bar" data-value="6000" data-month="Dec"></div>
+        <!-- Grafico -->
+        <div class="details-chart">
+            <div class="chart-order">
+                <div class="chart-container">
+                    <div class="chart">
+                        <div class="bar" data-value="3000" data-month="Jan"></div>
+                        <div class="bar" data-value="4500" data-month="Feb"></div>
+                        <div class="bar" data-value="3500" data-month="Mar"></div>
+                        <div class="bar" data-value="5000" data-month="Apr"></div>
+                        <div class="bar" data-value="2000" data-month="May"></div>
+                        <div class="bar" data-value="4000" data-month="Jun"></div>
+                        <div class="bar" data-value="3700" data-month="Jul"></div>
+                        <div class="bar" data-value="4800" data-month="Aug"></div>
+                        <div class="bar" data-value="2500" data-month="Sep"></div>
+                        <div class="bar" data-value="5300" data-month="Oct"></div>
+                        <div class="bar" data-value="4200" data-month="Nov"></div>
+                        <div class="bar" data-value="6000" data-month="Dec"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <script src="./js/scripts.js"></script>
