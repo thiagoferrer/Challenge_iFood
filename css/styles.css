@@ -249,6 +249,7 @@ body{
     min-height: 250px;
     background: #f7f7f7;
     padding: 20px;
+    box-shadow: 10px 5px 5px #999;
 }
 
 .cardheader {
@@ -337,6 +338,7 @@ body{
     display: grid;
     min-height: 200px;
     padding: 20px;
+    box-shadow: 10px 5px 5px #999;
 }
 
 .details .recentCustomers .imgBx {
@@ -381,22 +383,23 @@ body{
 
 /* Financeiro.HTML */
 /* Tabela */
-
 .detailsfinanceiro{
     position: relative;
     width: 100%;
     padding: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1);
 }
 
 .financeiro{
     background: #f7f7f7;
     position: relative;
     display: grid;
-    grid-gap: 20px;
     min-height: 250px;
     padding: 20px;
-    display: grid;
-    grid-gap:20px;
+    box-shadow: 10px 5px 5px #999;
 }
 
 .financeiroheader{
@@ -410,9 +413,9 @@ body{
 }
 
 .financeiro_table{
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .financeiro_table tr{
