@@ -7,15 +7,11 @@ function toggleMenu(){
     main.classList.toggle('active');
 }
 
-// grafico
+// grafico Financeiro.html
 document.querySelectorAll('.bar').forEach(function(bar) {
     var value = bar.getAttribute('data-value');
     var maxValue = 6000; // Ajuste conforme necessário
     var height = (value / maxValue) * 100;
     bar.style.height = height + '%';
 });
-
-
-
-
 

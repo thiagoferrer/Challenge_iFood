@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!-- Menu Lateral -->
     <div class="container">
         <div class="navigation">
@@ -40,25 +39,25 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="delivery.html">
                         <span class="icon"><i class="bi bi-bag"></i></span>
                         <span class="title">Delivery</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="avaliacoes.html">
                         <span class="icon"><i class="bi bi-star"></i></span>
                         <span class="title">Avaliações</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="criarconta.html">
                         <span class="icon"><i class="bi bi-person-add"></i></span>
                         <span class="title">Criar Conta</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sair.html">
                         <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
                         <span class="title">Sair</span>
                     </a>
@@ -87,6 +86,35 @@
         <div class="financeiro">
             <div class="financeiroheader">
                 <h2>Relatório</h2>
+                <div class="search-bar">
+                    <form>
+                        <label for="month">Mês:</label>
+                        <select id="month" name="month">
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                
+                        <label for="year">Ano:</label>
+                        <select id="year" name="year">
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <!-- Adicione mais anos conforme necessário -->
+                        </select>
+                
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
                 <a href="#" class="btn">View All</a>
             </div>
             <table class="financeiro_table">
@@ -241,7 +269,8 @@
             </div>
         </div>
     </div>
-    
+    </div>
+
     <script src="./js/scripts.js"></script>
 </body>
 

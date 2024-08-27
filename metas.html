@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas - Gráficos de Meia Pizza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Menu Lateral -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-basket"></i></span>
+                        <span class="title"><h2>iFood</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="financeiro.html">
+                        <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                        <span class="title">Financeiro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="metas.html">
+                        <span class="icon"><i class="bi bi-bullseye"></i></span>
+                        <span class="title">Metas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="delivery.html">
+                        <span class="icon"><i class="bi bi-bag"></i></span>
+                        <span class="title">Delivery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="avaliacoes.html">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                        <span class="title">Avaliações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="criarconta.html">
+                        <span class="icon"><i class="bi bi-person-add"></i></span>
+                        <span class="title">Criar Conta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sair.html">
+                        <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="bi bi-search"></i>
+                    </label>
+                </div>
+                <div class="logo">
+                    <img src="ifood logo vermelho.jpg">
+                </div>
+            </div>
+
+        <!-- Part1 -->
+        <div class="details_metas">
+            <div class="metas">
+                <div class="metas-group">
+                    <div class="metas-container">
+                        <canvas id="chart1"></canvas>
+                        <div class="description">
+                            <p>Despesas</p>
+                            <p>Planejado: 30%</p>
+                            <p>Realizado: 10%</p>
+                        </div>
+                    </div>
+                    <div class="metas-container">
+                        <canvas id="chart2"></canvas>
+                        <div class="description">
+                            <p>Saldo</p>
+                            <p>Planejado: 70%</p>
+                            <p>Realizado: 50%</p>
+                        </div>
+                    </div>
+                    <div class="metas-container">
+                        <canvas id="chart3"></canvas>
+                        <div class="description">
+                            <p>N° de Cliente</p>
+                            <p>Planejado: 90%</p>
+                            <p>Realizado: 85%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parte 2 -->
+        <div class="details_metas">
+            <div class="metas">
+                <div class="metas-group">
+                    <div class="metas-container">
+                        <canvas id="chart4"></canvas>
+                        <div class="description">
+                            <p>Receitas</p>
+                            <p>Planejado: 80%</p>
+                            <p>Realizado: 60%</p>
+                        </div>
+                    </div>
+                    <div class="metas-container">
+                        <canvas id="chart5"></canvas>
+                        <div class="description">
+                            <p>Vendas</p>
+                            <p>Planejado: 80%</p>
+                            <p>Realizado: 30%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const createHalfDoughnutChart = (ctx, planned, actual, colors) => {
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Realizado', 'Planejado'],
+                    datasets: [{
+                        data: [actual, planned - actual],
+                        backgroundColor: colors,
+                        hoverBackgroundColor: colors.map(color => shadeColor(color, -20)),
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    rotation: -90,
+                    circumference: 180,
+                    cutout: '70%',
+                    plugins: {
+                        tooltip: {
+                            enabled: true
+                        }
+                    }
+                }
+            });
+        }
+
+        const shadeColor = (color, percent) => {
+            let num = parseInt(color.slice(1), 16),
+                amt = Math.round(2.55 * percent),
+                R = (num >> 16) + amt,
+                G = (num >> 8 & 0x00FF) + amt,
+                B = (num & 0x0000FF) + amt;
+            return `#${(0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 + (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 + (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1)}`;
+        }
+
+        createHalfDoughnutChart(document.getElementById('chart1').getContext('2d'), 80, 60, ['#FF6384', '#FFCDD2']);
+        createHalfDoughnutChart(document.getElementById('chart2').getContext('2d'), 70, 50, ['#36A2EB', '#BBDEFB']);
+        createHalfDoughnutChart(document.getElementById('chart3').getContext('2d'), 90, 85, ['#FFCE56', '#FFF9C4']);
+        createHalfDoughnutChart(document.getElementById('chart4').getContext('2d'), 60, 40, ['#4BC0C0', '#B2DFDB']);
+        createHalfDoughnutChart(document.getElementById('chart5').getContext('2d'), 50, 30, ['#9966FF', '#D1C4E9']);
+    </script>
+</body>
+</html>
