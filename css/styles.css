@@ -823,3 +823,48 @@ h2 {
     background-color: #DA5D69;
 }
 
+/* Login */
+
+.detailslogin {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    background: #32cd33;
+}
+
+.login {
+    background: #1e90ff;
+    position: relative;
+    display: grid;
+    min-height: 250px;
+    padding: 100px;
+    box-shadow: 10px 5px 5px #999;
+}
+
+.loginheader{
+    align-items: center;
+}
+
+/* LOGOUT */
+
+.detailslogout {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    background: #32cd33;
+}
+
+.logout {
+    background: #1e90ff;
+    position: relative;
+    display: grid;
+    min-height: 250px;
+    padding: 100px;
+    box-shadow: 10px 5px 5px #999;
+}
+
+.logoutheader{
+    align-items: center;
+}
