@@ -695,3 +695,35 @@ body{
     color: #555;
     font-size: 13px;
 }
+
+/* Avaliações */
+.blococontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os blocos */
+    justify-content: center;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px; /* Largura dos blocos */
+    height: 200px; /* Altura dos blocos */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bloco h2 {
+    margin: 0;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.bloco p {
+    margin: 0;
+    text-align: center;
+}
