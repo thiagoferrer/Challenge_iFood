@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
 }
 
-/* MENU LATERAL */
+/* MENU LATERAL -------------------------------- */
 .container{
     position: relative;
     width: 100%;
@@ -89,7 +89,7 @@ body{
     white-space: nowrap;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* CONTEÚDO PRINCIPAL -------------------------------- */
 .main{
     position: absolute;
     width: calc(100% - 200px);
@@ -179,7 +179,7 @@ body{
     object-fit: cover;
 }
 
-/* CONTEÚDO PRINCIPAL - CARDS */
+/* CONTEÚDO PRINCIPAL - CARDS -------------------------------- */
 .cardBox {
     position: relative;
     width: 100%;
@@ -232,7 +232,7 @@ body{
 
 }
 
-/* CONTEÚDO PRINCIPAL - STATUS ORDERS */
+/* CONTEÚDO PRINCIPAL - STATUS ORDERS -------------------------------- */
 .details {
     position: relative;
     width: 100%;
@@ -286,10 +286,8 @@ body{
 }
 
 .details .recentOrders table tr:hover{
-    background: #F7ACB7;
-    color: #000;
-    transform: scale(1.0);
-    font-weight: bold;
+    background: linear-gradient(to top, #ff3366, #FF5733); 
+    font-weight: 600;
 }
 
 .details .recentOrders table tbody tr:last-child{
@@ -366,10 +364,7 @@ body{
 
 .details .recentCustomers table tr:hover,
 .details .recentCustomers table tr:hover td h4 span {
-    background: #F7ACB7;
-    color: #000;
-    transform: scale(1);
-    font-weight: bold;
+    background: linear-gradient(to top, #ff3366, #FF5733);
 }
 
 .details .recentCustomers table tr td {
@@ -382,7 +377,7 @@ body{
     line-height: 1.2em;
 }
 
-/* Financeiro.HTML */
+/* Financeiro.HTML -------------------------------- */
 /* Tabela */
 .detailsfinanceiro{
     position: relative;
@@ -459,14 +454,14 @@ body{
     margin-top: 10px
 }
 
+
 .financeiro_table tr{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1px;
 }
 
 .financeiro_table tr:hover{
-    background: #F7ACB7;
-    color: #000;
+    background: linear-gradient(to top, #ff3366, #FF5733);
 }
 
 .financeiro_table tbody tr:last-child{
@@ -479,7 +474,15 @@ body{
     font-size: 15px;
 }
 
-/* Grafico Financeiro */
+.financeiro_table tr td:nth-child(1){
+    font-weight: 600;
+}
+
+.financeiro_table thead tr td{
+    font-weight: 600;
+}
+
+/* Grafico Financeiro -------------------------------- */
 .details-chart{
     position: relative;
     width: 100%;
@@ -523,7 +526,6 @@ body{
     transition: transform 0.3s ease;
     cursor: pointer;
     overflow: hidden;
-    background: linear-gradient(to top, #e0e0e0 50%, #3498db);
 }
 
 .bar::before {
@@ -550,20 +552,20 @@ body{
 }
 
 .bar[data-month="Jan"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="Feb"] { background: linear-gradient(to top, #ff3366, #FF5733); }
+.bar[data-month="Fev"] { background: linear-gradient(to top, #ff3366, #FF5733); }
 .bar[data-month="Mar"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="Apr"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="May"] { background: linear-gradient(to top, #ff3366, #FF5733); }
+.bar[data-month="Abr"] { background: linear-gradient(to top, #ff3366, #FF5733); }
+.bar[data-month="Mai"] { background: linear-gradient(to top, #ff3366, #FF5733); }
 .bar[data-month="Jun"] { background: linear-gradient(to top, #ff3366, #FF5733); }
 .bar[data-month="Jul"] { background: linear-gradient(to top, #ff3366, #FF5733); }
 .bar[data-month="Aug"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="Sep"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="Oct"] { background: linear-gradient(to top, #ff3366, #FF5733); }
+.bar[data-month="Set"] { background: linear-gradient(to top, #ff3366, #FF5733); }
+.bar[data-month="Out"] { background: linear-gradient(to top, #ff3366, #FF5733); }
 .bar[data-month="Nov"] { background: linear-gradient(to top, #ff3366, #FF5733); }
-.bar[data-month="Dec"] { background: linear-gradient(to top, #FF3366, #FF5733); }
+.bar[data-month="Dez"] { background: linear-gradient(to top, #FF3366, #FF5733); }
 
 
-/* Metas.html */
+/* Metas.html -------------------------------- */
 
 .details_metas{
     position: relative;
@@ -597,7 +599,7 @@ body{
     text-align: center;
 }
 
-/* Estilo do gráfico de meia pizza */
+/* Estilo do gráfico de meia pizza -------------------------------- */
 .half-pie {
     width: 100px;
     height: 50px;
@@ -625,7 +627,7 @@ body{
     font-weight: bold;
 }
 
-/* delivery.html */
+/* delivery.html -------------------------------- */
 .detailsprofile{
     position: relative;
     width: 100%;
@@ -696,7 +698,7 @@ body{
     font-size: 13px;
 }
 
-/* Avaliações */
+/* Avaliações -------------------------------- */
 .blococontainer {
     display: flex;
     flex-wrap: wrap;
@@ -728,7 +730,7 @@ body{
     text-align: center;
 }
 
-/* CRIAR CONTA */
+/* CRIAR CONTA -------------------------------- */
 .details_grid{
     position: relative;
     width: 100%;
@@ -824,30 +826,126 @@ h2 {
 }
 
 /* Login */
-
 .detailslogin {
     position: relative;
     width: 100%;
     padding: 20px;
     padding-top: 20px;
-    background: #32cd33;
 }
 
 .login {
-    background: #1e90ff;
     position: relative;
     display: grid;
-    min-height: 250px;
+    min-height: 800px;
     padding: 100px;
     box-shadow: 10px 5px 5px #999;
+    align-items: center;
+    justify-content: center;
+    background: #F5E9DA;
 }
 
-.loginheader{
-    align-items: center;
+.login_logo{
+    background: url(../image/ifood\ logo\ vermelho.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f,
+                0px 0px 0px 2px #ecf0f3,
+                8px 8px 15px #a7aaaf,
+                -8px -8px 15px #fff;
 }
+
+.login_title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+
+.fields{
+    width: 100%;
+    padding: 50px 5px 5px 5px;
+}
+
+.fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+
+.fields .username, .password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+}
+
+.signin{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #fff;
+    background: #F7ACB7;
+    transition: .5s;
+}
+
+.signin:hover{
+    background: #DA5D69;
+}
+
+.signin:active{
+    background: #ea1d2c;
+}
+
+.link{
+    padding: 20px;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
+
+
+
+
+.fields .bi{
+    height: 22px;
+    margin: 0px 10px -5px 25px;
+}
+
+
+
+
+
+
+
+
+
 
 /* LOGOUT */
-
 .detailslogout {
     position: relative;
     width: 100%;
