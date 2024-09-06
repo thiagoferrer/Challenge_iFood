@@ -951,5 +951,12 @@ h2 {
 }
 
 .logoutheader{
-    align-items: center;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+}
+
+.logoutheader h2 p{
+    text-align: justify;
+    text-indent: 50px;
 }
