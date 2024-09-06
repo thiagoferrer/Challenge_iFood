@@ -928,22 +928,10 @@ h2 {
     font-size: 15px;
 }
 
-
-
-
 .fields .bi{
     height: 22px;
     margin: 0px 10px -5px 25px;
 }
-
-
-
-
-
-
-
-
-
 
 /* LOGOUT */
 .detailslogout {
@@ -951,16 +939,15 @@ h2 {
     width: 100%;
     padding: 20px;
     padding-top: 20px;
-    background: #32cd33;
 }
 
 .logout {
-    background: #1e90ff;
+    background: #F5E9DA;
     position: relative;
     display: grid;
-    min-height: 250px;
+    min-height: 550px;
     padding: 100px;
-    box-shadow: 10px 5px 5px #999;
+    box-shadow: 10px 5px 5px #999;    
 }
 
 .logoutheader{
