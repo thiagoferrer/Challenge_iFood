@@ -44,7 +44,7 @@ body{
 }
 
 .navigation ul li:hover  {
-    background: #DA5D69;
+    background: linear-gradient(to top, #FF3366, #FF5733);    
     transition: 0.5s;
     transform: scale(1.1);
     font-weight: bold;
