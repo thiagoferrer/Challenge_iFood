@@ -247,7 +247,7 @@ body{
     position: relative;
     display: grid;
     min-height: 250px;
-    background: #f7f7f7;
+    background: #F5E9DA;
     padding: 20px;
     box-shadow: 10px 5px 5px #999;
 }
@@ -332,7 +332,7 @@ body{
 }
 
 .details .recentCustomers {
-    background: #f7f7f7;
+    background: #F5E9DA;
     position: relative;
     display: grid;
     min-height: 200px;
@@ -362,11 +362,6 @@ body{
     color: #999;
 }
 
-.details .recentCustomers table tr:hover,
-.details .recentCustomers table tr:hover td h4 span {
-    background: linear-gradient(to top, #ff3366, #FF5733);
-}
-
 .details .recentCustomers table tr td {
     padding: 7px 10px;
 }
@@ -390,7 +385,7 @@ body{
 }
 
 .financeiro{
-    background: #f7f7f7;
+    background: #F5E9DA;
     position: relative;
     display: grid;
     min-height: 250px;
@@ -494,7 +489,7 @@ body{
 }
 
 .chart-order{
-    background: #f7f7f7;
+    background: #F5E9DA;
     position: relative;
     display: grid;
     min-height: 250px;
@@ -578,7 +573,7 @@ body{
 }
 
 .metas{
-    background: #f7f7f7;
+    background: #F5E9DA;
     position: relative;
     display: grid;
     min-height: 250px;
@@ -603,7 +598,6 @@ body{
 .half-pie {
     width: 100px;
     height: 50px;
-    background: conic-gradient(#4CAF50 0% 50%, #FF5722 50% 100%);
     border-radius: 100px 100px 0 0;
     position: relative;
     overflow: hidden;
@@ -662,7 +656,7 @@ body{
 }
 
 .profile-card {
-    background-color: #f9f9f9;
+    background-color: #F5E9DA;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -741,7 +735,7 @@ body{
 }
 
 .grid{
-    background: #f7f7f7;
+    background: #F5E9DA;
     position: relative;
     display: grid;
     min-height: 250px;
